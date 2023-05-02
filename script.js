@@ -5,5 +5,5 @@ const promise = new Promise((resolve, reject) => {
     });
       
     promise.then(values => {
-    console.log(values[0]);
+    console.log(values);
     });
