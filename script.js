@@ -1,8 +1,9 @@
-//your JS code here. If required.
-const promise1 = Promise.resolve("Hello, world!");
-const ele=document.getElementById("output");
-promise1.then((value) => {
-  
- ele.innerHTML= value;
-}, 1000);
-
+const promise = new Promise((resolve, reject) => {
+        setTimeout(() => {
+            resolve(["Hello world!"]);
+        }, 1000);
+    });
+      
+    promise.then(values => {
+    console.log(values[0]);
+    });
