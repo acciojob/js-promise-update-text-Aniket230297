@@ -5,8 +5,6 @@ const promise = new Promise((resolve, reject) => {
     });
       
     promise.then(values => {
-		let text=document.createElement("div");
-		text.innerText=values;
-		document.body.append(text);
-    //console.log(values);
+    //console.log(values)
+	document.getElementById("output").innerText = values;
     });
